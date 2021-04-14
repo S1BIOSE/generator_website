@@ -1,0 +1,141 @@
+<div class="card mb-5 overflow-hidden shadow rounded bg-white">
+  <div class="card-body">
+
+    <form class="border-bottom border-dark mb-3">
+      <legend>Préremplir le formulaire</legend>
+      <div class="mb-3">
+        <input class="form-control" type="file" id="formFile">
+        <small id="helpFile" class="form-text">Importez votre fichier de sauvegarde YAML.</small>
+      </div>
+      <div class="mb-4">
+        <button type="submit" class="btn btn-secondary">Importer</button>
+      </div>
+    </form>
+
+    <form>
+      <div class="alert alert-warning" role="alert">
+        Toutes les informations que vous allez saisir sur ce formulaire seront affichées publiquement sur votre site web. Il s'agit des informations de votre entreprise, pas vos informations personnelles.
+      </div>
+
+      <legend>Générateur de site web</legend>
+      <div class="mb-3">
+        <label for="inputTitle" class="form-label">Nom de l'entreprise</label>
+        <input type="text" class="form-control is-invalid" id="inputTitle" required>
+        <div class="invalid-feedback">
+          Ce champ est requis.
+        </div>
+        <small id="helpTitle" class="form-text">Entrez le nom de votre entreprise.</small>
+      </div>
+      <div class="mb-3">
+        <label for="textareaDescription" class="form-label">Présentation de l'entreprise</label>
+        <textarea class="form-control is-invalid" id="textareaDescription" rows="5" required></textarea>
+        <div class="invalid-feedback">
+          Ce champ est requis.
+        </div>
+        <small id="helpDescription" class="form-text">Entrez une description de votre entreprise.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="inputSocialNetwork1" class="form-label">Réseau social 1</label>
+        <input type="text" class="form-control is-invalid" id="inputSocialNetwork1" required>
+        <div class="invalid-feedback">
+          Ce champ est requis.
+        </div>
+        <small id="helpSocialNetwork1" class="form-text">Entrez l'url de votre page sur les réseaux sociaux.</small>
+      </div>
+      <div class="mb-3">
+        <label for="inputSocialNetwork2" class="form-label">Réseau social 2</label>
+        <input type="text" class="form-control" id="inputSocialNetwork2">
+        <small id="helpSocialNetwork2" class="form-text">Entrez l'url de votre page sur les réseaux sociaux.</small>
+      </div>
+      <div class="mb-3">
+        <label for="inputSocialNetwork3" class="form-label">Réseau social 3</label>
+        <input type="text" class="form-control" id="inputSocialNetwork3">
+        <small id="helpSocialNetwork3" class="form-text">Entrez l'url de votre page sur les réseaux sociaux.</small>
+      </div>
+      <div class="mb-3">
+        <label for="inputWebsite1" class="form-label">Marketplace 1</label>
+        <input type="text" class="form-control is-invalid" id="inputWebsite1" required>
+        <div class="invalid-feedback">
+          Ce champ est requis.
+        </div>
+        <small id="helpWebsite1" class="form-text">Entrez l'url de votre boutique sur les marketplaces.</small>
+      </div>
+      <div class="mb-3">
+        <label for="inputWebsite2" class="form-label">Marketplace 2</label>
+        <input type="text" class="form-control" id="inputWebsite2">
+        <small id="helpWebsite2" class="form-text">Entrez l'url de votre boutique sur les marketplaces.</small>
+      </div>
+      <div class="mb-3">
+        <label for="inputWebsite3" class="form-label">Marketplace 3</label>
+        <input type="text" class="form-control" id="inputWebsite3">
+        <small id="helpWebsite3" class="form-text">Entrez l'url de votre boutique sur les marketplaces.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Adresse email</label>
+        <input type="email" class="form-control is-invalid" id="inputEmail" required>
+        <div class="invalid-feedback">
+          Ce champ est requis.
+        </div>
+        <small id="helpEmail" class="form-text">Entrez l'adresse email de votre entreprise.</small>
+      </div>
+      <div class="row">
+        <div class="col-12 mb-3">
+          <label for="inputAddress" class="form-label">Adresse</label>
+          <input type="text" class="form-control is-invalid" id="inputAddress" required>
+          <div class="invalid-feedback">
+            Ce champ est requis.
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="inputAddress2" class="form-label">Adresse 2</label>
+          <input type="text" class="form-control" id="inputAddress2">
+        </div>
+        <div class="col-md-2 mb-3">
+          <label for="inputZip" class="form-label">Code postal</label>
+          <input type="text" class="form-control is-invalid" id="inputZip" required>
+          <div class="invalid-feedback">
+            Ce champ est requis.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="inputCity" class="form-label">Ville</label>
+          <input type="text" class="form-control is-invalid" id="inputCity" required>
+          <div class="invalid-feedback">
+            Ce champ est requis.
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="inputState" class="form-label">Pays</label>
+          <input type="text" class="form-control is-invalid" id="inputState" required>
+          <div class="invalid-feedback">
+            Ce champ est requis.
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="inputPhone" class="form-label">Téléphone</label>
+        <input type="text" class="form-control" id="inputPhone">
+        <small id="helpPhone" class="form-text">Entrez le numéro de téléphone de votre entreprise.</small>
+      </div>
+      <div class="mb-3">
+        <label for="inputSiret" class="form-label">SIRET</label>
+        <input type="text" class="form-control is-invalid" id="inputSiret" required>
+        <div class="invalid-feedback">
+          Ce champ est requis.
+        </div>
+        <small id="helpSiret" class="form-text">Entrez le numéro de SIRET de votre entreprise.</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="inputFeed" class="form-label">Fil d'actualité</label>
+        <input type="text" class="form-control" id="inputFeed">
+        <small id="helpFeed" class="form-text">Entrez l'url de votre Flux RSS sur la plateforme S1BIOSE.</small>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Générer</button>
+    </form>
+
+  </div>
+</div>
