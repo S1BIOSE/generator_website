@@ -1,0 +1,7 @@
+generator_website.user_page.invitation:
+  path: '/generator-website'
+  defaults:
+    _controller: '\Drupal\generator_website\Controller\GeneratorWebsitePageController::GeneratorWebsite'
+    _title: 'Générateur de site web'
+  requirements:
+    _permission: 'access content' 
