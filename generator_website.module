@@ -1,0 +1,14 @@
+<?php
+
+function generator_website_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'generator_website/generator_website';
+}
+
+function generator_website_theme($existing, $type, $theme, $path) {
+  return [
+    'generator_website_page_template' => [
+      'path' => $path . '/templates',
+      'template' => 'generator-website-page',
+    ],
+  ];
+}
